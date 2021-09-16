@@ -1,6 +1,6 @@
 pkgbase = drone-cli-git
 	pkgdesc = Drone CLI
-	pkgver = 20210622
+	pkgver = 1.4.0.r2.g75f1ec6
 	pkgrel = 1
 	url = http://docs.drone.io/cli-installation/
 	arch = any
@@ -12,4 +12,3 @@ pkgbase = drone-cli-git
 	sha256sums = SKIP
 
 pkgname = drone-cli-git
-

@@ -1,7 +1,7 @@
 # Maintainer: Robin Appelman <robin@icewind.nl>
 
 pkgname=drone-cli-git
-pkgver=20210622
+pkgver=1.4.0.r2.g75f1ec6
 pkgrel=1
 pkgdesc='Drone CLI'
 arch=('any')
@@ -17,7 +17,7 @@ _gitname='drone-cli'
 
 pkgver() {
   cd "$_gitname"
-  git show -s --format="%ci" HEAD | sed -e 's/-//g' -e 's/ .*//'
+  git describe --long --tags | sed 's/^v//;s/\([^-]*-g\)/r\1/;s/-/./g'
 }
 
 build() {
